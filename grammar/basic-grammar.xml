@@ -30,17 +30,17 @@
 -->
 <!DOCTYPE grammar [
   <!ENTITY WS "<opt><non-terminal ref='SP'/></opt>">
-  <!ENTITY SP "<non-terminal ref='SP'/>">
+  <!ENTITY SP "<non-terminal ref='SP'/>"> 
   <!ENTITY expr "<non-terminal ref='Expression'/>">
   <!ENTITY var "<non-terminal ref='Variable'/>">
 ]>
-<grammar language="Cypher Basic Grammar"
+<grammar language="Cypher Basic Grammar" 
   xmlns="http://opencypher.org/grammar"
   xmlns:rr="http://opencypher.org/railroad"
   xmlns:oc="http://opencypher.org/opencypher"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://opencypher.org/grammar xmlschemas/ocGrammar.xsd "
-  >
+  xsi:schemaLocation="http://opencypher.org/grammar xmlschemas/ocGrammar.xsd " 
+  > <!-- This chunk just defined a bunch of namespaces: xmlns, rr, oc, xsi -->
 
   <!-- / WHERE \ -->
 
@@ -55,7 +55,7 @@
 
   <production name="Pattern">
     <non-terminal ref="PatternPart"/>
-    <repeat> &WS; , &WS; <non-terminal ref="PatternPart"/></repeat>
+    <repeat> &WS; , &WS; <non-terminal ref="PatternPart"/></repeat> 
   </production>
 
   <production name="PatternPart" rr:inline="true">
