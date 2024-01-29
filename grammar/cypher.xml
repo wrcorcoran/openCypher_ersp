@@ -200,7 +200,7 @@
 
   <production name="MergeAction" rr:inline="true">
     <alt>
-      <seq>ON &SP; MATCH &SP; <non-terminal ref="Set"/></seq>
+      <seq>ON &SP; https://s3.amazonaws.com/artifacts.opencypher.org/M23/railroad/Cypher.html &SP; <non-terminal ref="Set"/></seq>
       <seq>ON &SP; CREATE &SP; <non-terminal ref="Set"/></seq>
     </alt>
   </production>
